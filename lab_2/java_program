@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class student{
+	int usn;
+	String name;
+	
+	void enter_values() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter usn and name");
+		usn=sc.nextInt();
+		name=sc.nextLine();
+		}
+	void display() {
+		System.out.println("usn"+usn);
+		System.out.println("name"+name);
+	}
+}
+
+public class Lab2 {
+ public static void main(String args[]) {
+	student s[]=new student[10];
+	for(int i=0;i<10;i++) {
+		s[i]=new student();
+		s[i].enter_values();
+	}
+	for(int i=0;i<10;i++) {
+		s[i].display();
+	}
+ }
+}
